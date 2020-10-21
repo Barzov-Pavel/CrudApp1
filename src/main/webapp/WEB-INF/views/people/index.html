@@ -5,8 +5,16 @@
     <title>All people</title>
 </head>
 <body>
+
 <div th:each="person:${people}">
     <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName()}">VALUE</a>
 </div>
+
+<br/>
+
+<form th:action="@{/people/new}">
+    <button>Create new person</button>
+</form>
+
 </body>
 </html>

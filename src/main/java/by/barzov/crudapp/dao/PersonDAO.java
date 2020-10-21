@@ -31,4 +31,9 @@ public class PersonDAO {
         }
         return null;
     }
+
+    public void create(Person person) {
+        person.setId(++peopleCount);
+        people.add(person);
+    }
 }
