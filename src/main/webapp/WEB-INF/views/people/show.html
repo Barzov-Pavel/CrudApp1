@@ -7,5 +7,9 @@
 <body>
 <p th:text="${person.getName()}">VALUE</p>
 <p th:text="${person.getId()}">VALUE</p>
+
+<form th:action="@{/people/{id}/edit(id=${person.getId()})}">
+    <input type="submit" value="Update person">
+</form>
 </body>
 </html>
