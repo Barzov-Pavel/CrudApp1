@@ -1,9 +1,20 @@
 package by.barzov.crudapp.models;
 
+import javax.validation.constraints.*;
+
 public class Person {
     private int id;
+
+    @NotEmpty(message = "Name should not be empty")
+    @Size(min = 2, max = 50, message = "Name should be between 2 and 50 characters")
     private String name;
+
+    @Min(value = 0, message = "Age should not be less than 0")
+    @Max(value = 150, message = "Age should not be grater than 150")
     private int age;
+
+    @NotEmpty(message = "Email should not be empty")
+    @Email(message = "Invalid email")
     private String email;
 
     public Person() {
