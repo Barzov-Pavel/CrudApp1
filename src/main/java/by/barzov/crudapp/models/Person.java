@@ -20,8 +20,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(int id, String name, int age, String email)
-    {
+    public Person(int id, String name, int age, String email) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -44,23 +43,19 @@ public class Person {
         this.name = name;
     }
 
-    public int getAge()
-    {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(int age)
-    {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 }

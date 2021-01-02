@@ -43,7 +43,7 @@ public class PeopleController {
         if (bindingResult.hasErrors()) {
             return "/people/new";
         }
-        personDAO.create(person);
+        personDAO.save(person);
         return "redirect:/people";
     }
 
